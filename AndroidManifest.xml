@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.cc">
+
+    <!-- 앱에 필요한 권한 설정 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- 앱의 기본 설정 -->
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+
+        <!-- FileProvider 설정 -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+
+        <!-- 액티비티 설정 -->
+        <activity
+            android:name="mainpackage.example.cc.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- 메타데이터 설정 -->
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <activity android:name="mainpackage.example.cc.BustimeActivity"
+            android:label="two 액티비티"/>
+        <activity android:name="mainpackage.example.cc.BustimeGoSchoolActivity"
+            android:label="three 액티비티"/>
+        <activity android:name="mainpackage.example.cc.ElimActivity"
+            android:label="four 액티비티"/>
+        <activity android:name="mainpackage.example.cc.ListActivity"
+            android:label="five 액티비티"/>
+        <activity android:name="mainpackage.example.cc.MapActivity"
+            android:label="six 액티비티"/>
+        <activity android:name="mainpackage.example.cc.MenuActivity"
+            android:label="seven 액티비티"/>
+        <activity android:name="mainpackage.example.cc.DormActivity"
+            android:label="eight 액티비티"/>
+        <activity android:name="mainpackage.example.cc.Food1Activity"
+            android:label="nine 액티비티"/>
+        <activity android:name="mainpackage.example.cc.Food2Activity"
+            android:label="ten 액티비티"/>
+        <activity android:name="mainpackage.example.cc.Food3Activity"
+            android:label="eleven 액티비티"/>
+        <activity android:name="mainpackage.example.cc.RoomtimeActivity"
+            android:label="twelve 액티비티"/>
+
+        <!-- 다른 액티비티들 추가 -->
+
+    </application>
+
+</manifest>
