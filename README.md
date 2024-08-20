@@ -3,7 +3,15 @@
 ## 소개
 졸업작품으로 제작된 어플리케이션입니다.
 
-![어플 설계도](img/6.jpg)
+### 스크린샷
+  
+<div style="text-align: center;">
+    <img src="img/1.png" alt="설명 텍스트" width="250" height="400" style="display: inline-block; margin: 10px;">
+    <img src="img/2.png" alt="설명 텍스트" width="250" height="400" style="display: inline-block; margin: 10px;">
+    <img src="img/3.png" alt="설명 텍스트" width="250" height="400" style="display: inline-block; margin: 10px;">
+    <img src="img/4.png" alt="설명 텍스트" width="250" height="400" style="display: inline-block; margin: 10px;">
+    <img src="img/5.png" alt="설명 텍스트" width="250" height="400" style="display: inline-block; margin: 10px;">
+</div>
 
 
 ## 역할
@@ -15,6 +23,8 @@ CC 어플리케이션의 기획과 제작을 담당하였습니다.
 - **셔틀버스 시간표**
 - **학생식당 메뉴**
 - **건물 정보**
+
+
 
 ## 기능
 
